@@ -9,7 +9,7 @@ import requests
 from itertools import cycle
 
 # Encoded API endpoint
-API_BASE = "68747470733a2f2f6f776e2d6170692d62792d656e7468656d2e6f6e72656e6465722e636f6d2f6170693f6163636573733d454e5448454d266e756d6265723d"
+API_BASE = "aHR0cHM6Ly9lbnRoZW0tcGFpZC1hcGkudmVyY2VsLmFwcC9hcGk/YWNjZXNzPUVOVEhFTSZudW1iZXI9"
 
 # Gradient colors (ANSI escape codes)
 GRADIENT = [
