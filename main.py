@@ -32,7 +32,7 @@ BANNER_TEXT = r"""
 """
 
 DEV_INFO = f"""{BOLD}\033[92mDeveloper : Nitish Sharma{RESET}
-{BOLD}\033[96mPowered By: Zishan Raza{RESET}
+{BOLD}\033[96mPowered By: BLACK 🖤 ENTHEM{RESET}
 """
 
 def decode_api_base():
@@ -128,3 +128,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
