@@ -38,6 +38,7 @@
 | 🧠 **Smart Validation** | Auto-checks number length & format |
 
 ---
+```
 ╔═══════════════════════════════════════════════════════════════════╗
 ║ THIS TOOL IS FOR EDUCATIONAL & AUTHORIZED SECURITY RESEARCH ║
 ║ ONLY. UNAUTHORIZED USE ON ANY PHONE NUMBER WITHOUT PERMISSION ║
@@ -45,7 +46,7 @@
 ║ AND BLACK ENTHEM ARE NOT RESPONSIBLE FOR ANY MISUSE. ║
 ║ USE AT YOUR OWN RISK. YOU HAVE BEEN WARNED. ║
 ╚═══════════════════════════════════════════════════════════════════╝
-
+```
 ---
 
 ## 🎯 WHAT IS osint-tool?
@@ -63,9 +64,10 @@
 | 🛡️ **Anti-Crash**          | Robust error handling — no interruptions                   |
 | 🕵️ **Stealth Mode**        | Base64 encoded API endpoint hidden from static analysis    |
 
---
+---
 
 ## 🔥 KHATARNAK FEATURES 🔥
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │ │
 │ 🔍 OSINT POWER │
@@ -92,7 +94,7 @@
 │ └── Dependencies: Only 'requests' │
 │ │
 └─────────────────────────────────────────────────────────────────┘
-
+```
 ---
 
 ## 📸 LIVE PREVIEW
@@ -148,7 +150,7 @@ python3 main.py
 
 🐳 Docker Method (For Pros)
 
-docker run -it --rm python:3.9 bash -c "git clone https://github.com/NitishSharma/osint-tool.git /app && cd /app && pip install requests && python3 main.py"
+docker run -it --rm python:3.9 bash -c "git clone https://github.com/enthem-nitish/osint-tool.git /app && cd /app && pip install requests && python3 main.py"
 
 📱 Termux (Android Hackers)
 
@@ -178,8 +180,11 @@ python main.py
 │  STEP 5: Continue or exit                                   │
 │  └── Type 'y' for next number, 'N' to quit                  │
 └─────────────────────────────────────────────────────────────┘
+```
 
 🕵️ OSINT USE CASES
+--
+```
 Use Case	Description
 
 🚨 Cyber Threat Intelligence	            Identify suspicious numbers in logs
@@ -199,7 +204,11 @@ Germany:   +4915123456789
 
 ⚠️ These are fictional numbers for demonstration only.
 
+```
+
 🔧 TROUBLESHOOTING
+---
+```
 Problem	Solution
 ModuleNotFoundError: No module named 'requests'	Run: pip install requests
 Connection timeout	Check your internet/VPN. Try again.
@@ -207,19 +216,25 @@ Invalid number format	Use 6-15 digits, optional + prefix
 API returned error	Server may be down. Wait 5 mins.
 No output / blank screen	Run in supported terminal (CMD, PowerShell, Bash)
 KeyboardInterrupt	Press Ctrl+C to exit gracefully
-
+```
 
 📁 PROJECT STRUCTURE
+---
+```
 osint-tool/
 ├── main.py          # Main script (banner + API + styling)
 ├── README.md        # This file
 └── requirements.txt # Contains: requests
+```
 
 requirements.txt:
-requests>=2.25.0
+---
+```requests>=2.25.0```
 
 
-🧠 HOW IT WORKS (Technical Deep Dive)
+🧠 HOW IT WORKS (Technical Deep Dive) 
+---
+```
 # Step 1: Base64 encoded API endpoint (stealth)
 API_BASE = "aHR0cHM6Ly9lbnRoZW0tcGFpZC1hcGkudmVyY2VsLmFwcC9hcGk..."
 
@@ -238,8 +253,12 @@ data = response.json()
 # Step 6: Colorize output
 for key, value in data.items():
     print(f"\033[96m{key}\033[0m: \033[92m{value}\033[0m")
+```
+
 
 🔐 ENCODED API: WHY?
+---
+```
 ╔══════════════════════════════════════════════════════════════╗
 ║  REASONS FOR BASE64 ENCODING:                               ║
 ║  ✅ Avoid static detection by antivirus                     ║
@@ -248,8 +267,11 @@ for key, value in data.items():
 ║  ✅ Protect API endpoint from casual viewers                ║
 ║  ✅ Standard practice for red-team tools                    ║
 ╚══════════════════════════════════════════════════════════════╝
+```
 
 📊 STATISTICS
+--
+```
 Metric	                           Value
 Lines of Code	                     ~150
 Dependencies	                     1 (requests)
@@ -257,10 +279,12 @@ Response Time	                     1.5-3 seconds
 Memory Usage	                     < 50 MB
 Supported Countries                All (global)
 Input Validation	                 6-15 digits
+```
 
 
-
-👑 CREDITS & TEAM
+##👑 CREDITS & TEAM
+--
+```
 ╔═══════════════════════════════════════════════════════════════╗
 ║                                                               ║
 ║   ██████╗ ██╗      █████╗  ██████╗██╗  ██╗                   ║
@@ -275,19 +299,22 @@ Input Validation	                 6-15 digits
 ║   │  Alias      : BLACK ENTHEM                          │   ║
 ║   │  Country    : INDIA 🇮🇳                             │   ║
 ║   │  Specialty  : OSINT | Recon | Python | Cyber Sec    │   ║
-║   │  Website    : github.com/NitishSharma               │   ║
+║   │  Website    : github.com/enthem-nitish               │   ║
 ║   │  Powered By : BLACK 🖤 ENTHEM                       │   ║
 ║   └─────────────────────────────────────────────────────┘   ║
 ║                                                               ║
 ╚═══════════════════════════════════════════════════════════════╝
-
-
+```
 ⭐ SUPPORT & CONNECT
-<p align="center"> <a href="https://github.com/NitishSharma"> <img src="https://img.shields.io/badge/GitHub-NitishSharma-181717?style=for-the-badge&logo=github"/> </a> <a href="https://www.instagram.com/black_enthem"> <img src="https://img.shields.io/badge/Instagram-BLACK_ENTHEM-E4405F?style=for-the-badge&logo=instagram"/> </a> <a href="mailto:blackenthem@proton.me"> <img src="https://img.shields.io/badge/Email-BLACK_ENTHEM-8B89CC?style=for-the-badge&logo=protonmail"/> </a> </p>
+---
+<p align="center"> <a href="https://github.com/enthem-nitish"> <img src="https://img.shields.io/badge/GitHub-enthem-nitish-181717?style=for-the-badge&logo=github"/> </a> <a href="https://www.instagram.com/black_enthem"> <img src="https://img.shields.io/badge/Instagram-BLACK_ENTHEM-E4405F?style=for-the-badge&logo=instagram"/> </a> <a href="mailto:blackenthem@proton.me"> <img src="https://img.shields.io/badge/Email-BLACK_ENTHEM-8B89CC?style=for-the-badge&logo=protonmail"/> </a> </p>
+
+
 
 
 🌟 SHOW SOME LOVE
-
+-- 
+```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   If you like this tool, please:                           │
@@ -297,8 +324,11 @@ Input Validation	                 6-15 digits
 │   🐛 Report bugs via Issues                                 │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
+```
 
 📜 LICENSE
+--
+```
 ╔═══════════════════════════════════════════════════════════════╗
 ║                                                               ║
 ║              BLACK ENTHEM PROPRIETARY LICENSE                ║
@@ -315,7 +345,7 @@ Input Validation	                 6-15 digits
 ║   - Legal action if applicable                               ║
 ║                                                               ║
 ╚═══════════════════════════════════════════════════════════════╝
-
-<p align="center"> <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2500&pause=1000&color=00FF00&center=true&vCenter=true&width=600&height=30&lines=KNOWLEDGE+IS+FREE;BUT+RESPECT+THE+CODE;BLACK+%F0%9F%96%A4+ENTHEM" /> </p><p align="center"> <img src="https://api.visitorbadge.io/api/visitors?path=NitishSharma%2Fosint-tool&label=OSINT%20AGENTS%20VIEWED&labelColor=%23000000&countColor=%2300ff00&style=for-the-badge" /> </p><p align="center"> <b><i>⚡ "For the shadows, by the shadows." ⚡</i></b><br> <sub>BLACK 🖤 ENTHEM — We don't play, we dominate.</sub> </p><p align="center"> <code>exit</code> | <code>main.py</code> | <code>#OSINT</code> | <code>#BlackEnthem</code> </p> ```
+```
+<p align="center"> <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2500&pause=1000&color=00FF00&center=true&vCenter=true&width=600&height=30&lines=KNOWLEDGE+IS+FREE;BUT+RESPECT+THE+CODE;BLACK+%F0%9F%96%A4+ENTHEM" /> </p><p align="center"> <img src="https://api.visitorbadge.io/api/visitors?path=enthem-nitish%2Fosint-tool&label=OSINT%20AGENTS%20VIEWED&labelColor=%23000000&countColor=%2300ff00&style=for-the-badge" /> </p><p align="center"> <b><i>⚡ "For the shadows, by the shadows." ⚡</i></b><br> <sub>BLACK 🖤 ENTHEM — We don't play, we dominate.</sub> </p><p align="center"> <code>exit</code> | <code>main.py</code> | <code>#OSINT</code> | <code>#BlackEnthem</code> </p>
 
 
